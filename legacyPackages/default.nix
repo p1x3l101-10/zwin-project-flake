@@ -1,7 +1,7 @@
-{ pkgs, lib }:
+{ pkgs, lib, inputs }:
 
 lib.makeScope pkgs.newScope (prev: {
-  grpc_49 = prev.callPackage ./grpc_49 { };
+  grpc_49 = inputs.nixpkgs-old-grpc.legacyPackages.x86_64-linux.grpc;
   protobuf_21_6 = prev.callPackage ./protobuf_21_6 { };
   zwin-project = lib.attrsets.recurseIntoAttrs (import ./zwin-project { inherit (prev) callPackage; });
 })
