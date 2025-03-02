@@ -18,7 +18,7 @@ clangStdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = "";
+    hash = "sha256-mz837jq8lRuRblFl9QSTFW/tmtEwymEmJOesbIXEcgk=";
     fetchSubmodules = true;
   };
 
