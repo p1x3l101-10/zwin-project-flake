@@ -36,8 +36,9 @@ clangStdenv.mkDerivation rec {
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"
-    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc_49.dev}"
+    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc_49}"
   ];
+  NIX_CFLAGS_COMPILE = "-Wno-error=unused-result";
 
   meta = with lib; {
     description = "A library that implements the communication layer between Zen running on the PC and Zen Mirror running on the HMD.";
