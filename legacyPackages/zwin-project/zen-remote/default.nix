@@ -15,6 +15,7 @@ clangStdenv.mkDerivation rec {
     repo = name;
     tag = "v" + version;
     hash = "sha256-uuDvSqeyNIGMyiToaa7puh1pVRDt8f2N0SG8tWxRnqQ=";
+    fetchSubmodules = true;
   };
 
   nativeBuildInputs = [
