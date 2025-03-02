@@ -27,6 +27,7 @@ clangStdenv.mkDerivation rec {
   buildInputs = [
     meson
     ninja
+    wayland.dev
     wayland-scanner
     cmakeMinimal
     pkg-config
