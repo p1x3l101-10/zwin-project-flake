@@ -24,7 +24,7 @@ clangStdenv.mkDerivation rec {
     hash = "sha256-QpnqACaLs2FmI6w7FlOqiusOvHQwdXwBmOLXnMFq8HM=";
   };
 
-   nativeBuildInputs = [
+  nativeBuildInputs = [
     meson
     ninja
     wayland.dev

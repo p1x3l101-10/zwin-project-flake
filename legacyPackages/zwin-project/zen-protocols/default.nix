@@ -16,6 +16,11 @@ stdenv.mkDerivation rec {
     hash = "sha256-Gy5BhwIVzziZ2aTrmEP/s1CbuXdWEZMOoKp+3cFOzV8=";
   };
 
+  nativeBuildInputs = [
+    meson
+    ninja
+  ];
+
   meta = with lib; {
     description = "Wayland protocols for Zen Desktop";
     homepage = "https://github.com/zwin-project/" + name;

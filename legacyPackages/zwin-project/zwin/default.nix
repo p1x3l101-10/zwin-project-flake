@@ -27,10 +27,10 @@ stdenv.mkDerivation rec {
     pkg-config
     wayland-scanner
     cmakeMinimal
-    libxml2
   ];
   buildInputs = [
     wayland
+    libxml2
   ];
 
   meta = with lib; {
