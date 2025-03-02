@@ -1,7 +1,7 @@
 { lib, pkgs }:
 
-lib.makeScope pkgs.newScope (self: with self; {
-  zen-protocols = callPackage ./zen-protocols {};
-  zwin = callPackage ./zwin {};
-  zukou = callPackage ./zukou { inherit (self) zwin; };
+lib.makeScope pkgs.newScope (prev: {
+  zen-protocols = prev.callPackage ./zen-protocols {};
+  zwin = prev.callPackage ./zwin {};
+  zukou = prev.callPackage ./zukou {};
 })
