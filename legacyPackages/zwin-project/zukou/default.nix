@@ -4,7 +4,6 @@
 , meson
 , ninja
 , pkg-config
-, zwin
 , wayland-scanner
 , wayland
 , libjpeg
