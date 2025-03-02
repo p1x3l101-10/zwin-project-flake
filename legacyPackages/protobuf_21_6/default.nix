@@ -8,7 +8,7 @@
 callPackage (path + "/pkgs/development/libraries/protobuf/generic.nix") (
   {
     version = "21.6";
-    hash = "";
+    hash = "sha256-6Omd2O/eIZIgod3YV+zIIv+GqT+trith6+eepFEJIWM=";
   }
   // args
 )
