@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = lib.fakeHash;
+    hash = "sha256-9VHFjZPXkIbQcQEJLEUVsT3UnbvgWcZCXkcWLZx2bUA=";
   };
 
   buildInputs = [

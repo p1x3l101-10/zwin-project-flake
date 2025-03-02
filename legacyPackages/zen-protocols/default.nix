@@ -13,7 +13,7 @@ stdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     rev = "918348103312f84a96a3961a3dde51713b93bc3d";
-    hash = lib.fakeHash;
+    hash = "sha256-Gy5BhwIVzziZ2aTrmEP/s1CbuXdWEZMOoKp+3cFOzV8=";
   };
 
   meta = with lib; {
