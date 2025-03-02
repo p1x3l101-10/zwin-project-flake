@@ -25,6 +25,7 @@ stdenv.mkDerivation rec {
     ninja
     cmakeMinimal
     pkg-config
+    openssl.dev
   ];
   buildInputs = [
     grpc_49
