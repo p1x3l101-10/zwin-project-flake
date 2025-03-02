@@ -41,6 +41,10 @@ clangStdenv.mkDerivation rec {
     zwin
   ];
 
+  env = {
+    CXXFLAGS = "-DGLM_ENABLE_EXPERIMENTAL"; # Causes build failure without
+  };
+
   meta = with lib; {
     description = "Client library for Zwin.";
     homepage = "https://github.com/zwin-project/" + name;
