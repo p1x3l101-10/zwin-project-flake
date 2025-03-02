@@ -1,5 +1,5 @@
 { lib
-, stdenv
+, clangStdenv
 , fetchFromGitHub
 , meson
 , ninja
@@ -15,7 +15,7 @@
 , zukou
 }:
 
-stdenv.mkDerivation rec {
+clangStdenv.mkDerivation rec {
   name = "zennist";
   version = "0.1.1";
 
