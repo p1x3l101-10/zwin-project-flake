@@ -6,6 +6,7 @@
 , pkg-config
 , glm
 , zukou
+, libGL
 }:
 
 stdenv.mkDerivation rec {
@@ -27,6 +28,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     zukou
     glm
+    libGL
   ];
 
   meta = with lib; {
