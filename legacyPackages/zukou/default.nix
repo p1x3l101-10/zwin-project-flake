@@ -9,6 +9,7 @@
 , wayland
 , libjpeg
 , glm
+, cmakeMinimal
 }:
 
 stdenv.mkDerivation rec {
@@ -26,6 +27,7 @@ stdenv.mkDerivation rec {
     meson
     ninja
     wayland-scanner
+    cmakeMinimal
   ];
   nativeBuildInputs = [
     zwin
