@@ -10,6 +10,7 @@
 , libjpeg
 , glm
 , cmakeMinimal
+, libGLX
 }:
 
 stdenv.mkDerivation rec {
@@ -35,6 +36,7 @@ stdenv.mkDerivation rec {
     wayland
     libjpeg
     glm
+    libGLX
   ];
 
   meta = with lib; {
