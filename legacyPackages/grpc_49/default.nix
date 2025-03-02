@@ -1,5 +1,6 @@
 { grpc
 , fetchFromGitHub
+, fetchpatch
 }:
 
 # Copy data from nixpkgs rev: <d86e0e4f6c1375280a36252e61eeb3f8052e770b>
