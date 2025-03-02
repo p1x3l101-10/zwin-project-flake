@@ -6,6 +6,7 @@
 , grpc_49
 , protobuf_21_6
 , pkg-config
+, openssl
 }:
 
 stdenv.mkDerivation rec {
@@ -28,6 +29,7 @@ stdenv.mkDerivation rec {
   buildInputs = [
     grpc_49
     protobuf_21_6
+    openssl
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"
