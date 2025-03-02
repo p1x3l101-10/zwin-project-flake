@@ -52,7 +52,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [ cmake pkg-config ]
     ++ lib.optional (stdenv.hostPlatform != stdenv.buildPlatform) grpc;
   propagatedBuildInputs = [ c-ares re2 zlib abseil-cpp ];
-  buildInputs = [ c-ares.cmake-config openssl protobuf ]
+  buildInputs = [ c-ares openssl protobuf ]
     ++ lib.optionals stdenv.isLinux [ libnsl ];
 
   cmakeFlags = [
