@@ -28,6 +28,7 @@ stdenv.mkDerivation rec {
     ninja
     wayland-scanner
     cmakeMinimal
+    pkg-config
   ];
   nativeBuildInputs = [
     zwin
