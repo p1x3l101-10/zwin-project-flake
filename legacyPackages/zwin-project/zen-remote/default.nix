@@ -36,7 +36,7 @@ clangStdenv.mkDerivation rec {
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"
-    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc_49}"
+    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc_49.dev}"
   ];
 
   meta = with lib; {
