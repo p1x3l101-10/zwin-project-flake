@@ -1,5 +1,5 @@
 { lib
-, stdenv
+, clangStdenv
 , fetchFromGitHub
 , cmakeMinimal
 , ninja
@@ -10,7 +10,7 @@
 , libGL
 }:
 
-stdenv.mkDerivation rec {
+clangStdenv.mkDerivation rec {
   name = "zen-remote";
   version = "0.1.1";
 
