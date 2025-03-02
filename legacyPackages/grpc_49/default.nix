@@ -10,7 +10,7 @@
 , pkg-config
 , re2
 , openssl
-, protobuf
+, protobuf_21_6
 , grpc
 , abseil-cpp
 , libnsl
