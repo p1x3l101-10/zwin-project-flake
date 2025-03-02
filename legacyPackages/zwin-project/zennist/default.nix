@@ -11,7 +11,7 @@
 , cmakeMinimal
 , libGL
 , zwin
-, librsvg2
+, librsvg
 , zukou
 }:
 
@@ -41,7 +41,7 @@ stdenv.mkDerivation rec {
     glm
     libGL
     zwin
-    librsvg2
+    librsvg
     zukou
   ];
 
