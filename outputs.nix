@@ -9,4 +9,5 @@ in
   legacyPackages.x86_64-linux = callModule ./legacyPackages;
   formatter.x86_64-linux = pkgs.nixpkgs-fmt;
   overlays = callModule ./overlays;
+  nixosModules = callModule ./modules/nixos;
 }
