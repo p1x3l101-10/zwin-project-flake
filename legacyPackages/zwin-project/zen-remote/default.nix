@@ -14,7 +14,7 @@ stdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = "sha256-uuDvSqeyNIGMyiToaa7puh1pVRDt8f2N0SG8tWxRnqQ=";
+    hash = "sha256-otK/J1OK2B1b+SVBXcP1qBkP9sjW4rHrMWbQxsPcJ2Q=";
     fetchSubmodules = true;
   };
 
