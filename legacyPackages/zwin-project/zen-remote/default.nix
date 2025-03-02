@@ -3,7 +3,7 @@
 , fetchFromGitHub
 , cmakeMinimal
 , ninja
-, grpc
+, grpc_49
 , protobuf_21_6
 }:
 
@@ -24,12 +24,12 @@ stdenv.mkDerivation rec {
     cmakeMinimal
   ];
   buildInputs = [
-    grpc
+    grpc_49
     protobuf_21_6
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"
-    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc}"
+    "-DZEN_REMOTE_GRPC_SYSROOT=${grpc_49}"
   ];
 
   meta = with lib; {
