@@ -45,6 +45,10 @@ clangStdenv.mkDerivation rec {
     zukou
   ];
 
+  env = {
+    CXXFLAGS = "-DGLM_ENABLE_EXPERIMENTAL"; # Causes build failure without
+  };
+
   meta = with lib; {
     description = "Default 3D background/3D launcher in Zen";
     homepage = "https://github.com/zwin-project/" + name;
