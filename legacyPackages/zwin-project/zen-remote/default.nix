@@ -7,6 +7,7 @@
 , protobuf_21_6
 , pkg-config
 , openssl
+, libGL
 }:
 
 stdenv.mkDerivation rec {
@@ -31,6 +32,7 @@ stdenv.mkDerivation rec {
     grpc_49
     protobuf_21_6
     openssl
+    libGL
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"
