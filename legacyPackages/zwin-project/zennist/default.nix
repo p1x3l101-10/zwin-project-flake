@@ -23,7 +23,7 @@ clangStdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = "sha256-QpnqACaLs2FmI6w7FlOqiusOvHQwdXwBmOLXnMFq8HM=";
+    hash = "sha256-nC21iX0EzjrtxGfzTYHHAAegmPhltC+RK8im6GmU3uQ=";
   };
 
   nativeBuildInputs = [
