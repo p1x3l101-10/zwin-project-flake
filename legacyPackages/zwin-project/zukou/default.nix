@@ -9,7 +9,7 @@
 , libjpeg
 , glm
 , cmakeMinimal
-, libGLX
+, libGL
 , zwin
 }:
 
@@ -36,7 +36,7 @@ stdenv.mkDerivation rec {
     wayland
     libjpeg
     glm
-    libGLX
+    libGL
     zwin
   ];
 
