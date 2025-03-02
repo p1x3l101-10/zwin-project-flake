@@ -12,13 +12,13 @@
 
 clangStdenv.mkDerivation rec {
   name = "zen-remote";
-  version = "0.1.2";
+  version = "0.1.1";
 
   src = fetchFromGitHub {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = "sha256-otK/J1OK2B1b+SVBXcP1qBkP9sjW4rHrMWbQxsPcJ2Q=";
+    hash = "";
     fetchSubmodules = true;
   };
 
