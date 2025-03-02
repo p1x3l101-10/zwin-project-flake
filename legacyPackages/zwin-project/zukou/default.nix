@@ -11,7 +11,7 @@
 , glm
 , cmakeMinimal
 , libGLX
-, zwin-project
+, zwin
 }:
 
 stdenv.mkDerivation rec {
@@ -38,7 +38,7 @@ stdenv.mkDerivation rec {
     libjpeg
     glm
     libGLX
-    zwin-project.zwin
+    zwin
   ];
 
   meta = with lib; {
