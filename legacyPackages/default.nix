@@ -1,9 +1,5 @@
 { pkgs, lib }:
 
 {
-  zwin-project = lib.makeScope pkgs.newScope (self: with self; {
-    zen-protocols = callPackage ./zen-protocols {};
-    zukou = callPackage ./zukou {};
-    zwin = callPackage ./zwin {};
-  });
+  zwin-project = lib.attrsets.recurseIntoAttrs import ./zwin-project { inherit pkgs lib; };
 }
