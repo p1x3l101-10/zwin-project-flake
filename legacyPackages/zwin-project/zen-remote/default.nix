@@ -5,6 +5,7 @@
 , ninja
 , grpc_49
 , protobuf_21_6
+, pkg-config
 }:
 
 stdenv.mkDerivation rec {
@@ -22,6 +23,7 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     ninja
     cmakeMinimal
+    pkg-config
   ];
   buildInputs = [
     grpc_49
