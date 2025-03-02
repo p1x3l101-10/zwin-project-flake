@@ -4,7 +4,7 @@
 , cmakeMinimal
 , ninja
 , grpc
-, protobuf_21
+, protobuf_21_6
 }:
 
 stdenv.mkDerivation rec {
@@ -25,7 +25,7 @@ stdenv.mkDerivation rec {
   ];
   buildInputs = [
     grpc
-    protobuf_21
+    protobuf_21_6
   ];
   cmakeFlags = [
     "-DZEN_REMOTE_CLIENT=OFF"

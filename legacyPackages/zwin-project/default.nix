@@ -1,9 +1,9 @@
-{ lib, pkgs }:
+{ callPackage }:
 
-lib.makeScope pkgs.newScope (prev: {
-  zen-protocols = prev.callPackage ./zen-protocols { };
-  zen-remote = prev.callPackage ./zen-remote { };
-  zennist = prev.callPackage ./zennist { };
-  zukou = prev.callPackage ./zukou { };
-  zwin = prev.callPackage ./zwin { };
-})
+{
+  zen-protocols = callPackage ./zen-protocols { };
+  zen-remote = callPackage ./zen-remote { };
+  zennist = callPackage ./zennist { };
+  zukou = callPackage ./zukou { };
+  zwin = callPackage ./zwin { };
+}
