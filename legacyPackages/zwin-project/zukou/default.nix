@@ -24,7 +24,7 @@ clangStdenv.mkDerivation rec {
     hash = "sha256-QpnqACaLs2FmI6w7FlOqiusOvHQwdXwBmOLXnMFq8HM=";
   };
 
-  buildInputs = [
+   nativeBuildInputs = [
     meson
     ninja
     wayland.dev
@@ -32,7 +32,7 @@ clangStdenv.mkDerivation rec {
     cmakeMinimal
     pkg-config
   ];
-  nativeBuildInputs = [
+  buildInputs = [
     zwin
     wayland
     libjpeg

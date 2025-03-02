@@ -21,7 +21,7 @@ stdenv.mkDerivation rec {
     hash = "sha256-nQuYIa4m/sufyRCszUThebyBXJ7uB7k4HS1TRUjKV7s=";
   };
 
-  buildInputs = [
+  nativeBuildInputs = [
     meson
     ninja
     pkg-config
@@ -29,7 +29,7 @@ stdenv.mkDerivation rec {
     cmakeMinimal
     libxml2
   ];
-  nativeBuildInputs = [
+  buildInputs = [
     wayland
   ];
 
