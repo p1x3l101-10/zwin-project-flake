@@ -11,6 +11,7 @@
 , glm
 , cmakeMinimal
 , libGLX
+, zwin
 }:
 
 stdenv.mkDerivation rec {
@@ -21,7 +22,7 @@ stdenv.mkDerivation rec {
     owner = "zwin-project";
     repo = name;
     tag = "v" + version;
-    hash = "sha256-9VHFjZPXkIbQcQEJLEUVsT3UnbvgWcZCXkcWLZx2bUA=";
+    hash = "sha256-QpnqACaLs2FmI6w7FlOqiusOvHQwdXwBmOLXnMFq8HM=";
   };
 
   buildInputs = [
@@ -37,6 +38,7 @@ stdenv.mkDerivation rec {
     libjpeg
     glm
     libGLX
+    zwin
   ];
 
   meta = with lib; {
