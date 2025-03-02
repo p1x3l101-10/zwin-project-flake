@@ -1,0 +1,28 @@
+diff --git a/src/client/zen-remote-client.pc.in b/src/client/zen-remote-client.pc.in
+index 199506b..888def6 100644
+--- a/src/client/zen-remote-client.pc.in
++++ b/src/client/zen-remote-client.pc.in
+@@ -1,7 +1,7 @@
+ prefix=@CMAKE_INSTALL_PREFIX@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+-includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
++libdir=@CMAKE_INSTALL_FULL_LIBDIR@
++includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+ 
+ Name: ZEN remote client
+ Description: @CMAKE_PROJECT_DESCRIPTION@ - client
+diff --git a/src/server/zen-remote-server.pc.in b/src/server/zen-remote-server.pc.in
+index 57ff3dd..3606c63 100644
+--- a/src/server/zen-remote-server.pc.in
++++ b/src/server/zen-remote-server.pc.in
+@@ -1,7 +1,7 @@
+ prefix=@CMAKE_INSTALL_PREFIX@
+ exec_prefix=${prefix}
+-libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+-includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
++libdir=@CMAKE_INSTALL_FULL_LIBDIR@
++includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+ 
+ Name: ZEN remote server
+ Description: @CMAKE_PROJECT_DESCRIPTION@ - server
