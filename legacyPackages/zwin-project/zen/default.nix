@@ -25,6 +25,7 @@
 , zen-protocols
 , kdePackages
 , openvr
+, libxml2
 }:
 
 clangStdenv.mkDerivation rec {
@@ -64,6 +65,7 @@ clangStdenv.mkDerivation rec {
     zwin
     kdePackages.wayland-protocols
     openvr
+    libxml2
   ];
   patches = [
     ./remove-meson-wrap.patch
