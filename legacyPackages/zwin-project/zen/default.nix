@@ -18,6 +18,7 @@
 , zen-remote
 , zwin
 , formats
+, libdrm
 }:
 
 clangStdenv.mkDerivation rec {
@@ -47,6 +48,7 @@ clangStdenv.mkDerivation rec {
     freetype
     librsvg
     cglm
+    libdrm
   ];
   patches = [
     ./remove-meson-wrap.patch
