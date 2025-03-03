@@ -45,6 +45,9 @@ clangStdenv.mkDerivation rec {
     freetype
     librsvg
   ];
+  patches = [
+    ./remove-meson-wrap.patch
+  ];
 
   postInstallPhase = let
     exampleConfig = ((formats.toml { }).generate "config.toml" {
