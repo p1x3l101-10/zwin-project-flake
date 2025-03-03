@@ -59,7 +59,8 @@ clangStdenv.mkDerivation rec {
     mesa
     wlr-protocols
     zen-remote
-    zwin-protocols
+    zen-protocols
+    zwin
     kdePackages.wayland-protocols
   ];
   patches = [
