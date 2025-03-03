@@ -17,6 +17,7 @@
 , grpc_49
 , zen-remote
 , zwin
+, formats
 }:
 
 clangStdenv.mkDerivation rec {
@@ -46,7 +47,7 @@ clangStdenv.mkDerivation rec {
   ];
 
   postInstallPhase = let
-    exampleConfig = ((pkgs.formats.toml { }).generate "config.toml" {
+    exampleConfig = ((formats.toml { }).generate "config.toml" {
       wallpaper.filePath = "${out}/share/backgrounds/zen/Zen_Wallpaper_Main_3840x2160.png";
       board.initial_count = 3;
       space.default_app = "zennist";
