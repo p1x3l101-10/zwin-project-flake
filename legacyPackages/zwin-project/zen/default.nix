@@ -6,7 +6,7 @@
 , pkg-config
 , cmakeMinimal
 , wayland
-, wlroots
+, wlroots_0_16
 , pixman
 , libxkbcommon
 , libGLU
@@ -48,7 +48,7 @@ clangStdenv.mkDerivation rec {
   ];
   buildInputs = [
     wayland
-    wlroots
+    wlroots_0_16
     pixman
     libxkbcommon
     libGLU
