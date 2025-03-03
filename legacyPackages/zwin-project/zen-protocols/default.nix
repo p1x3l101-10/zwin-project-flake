@@ -26,7 +26,6 @@ stdenv.mkDerivation rec {
     cmakeMinimal
     wayland-scanner
   ];
-  buildInputs = [];
 
   meta = with lib; {
     description = "Wayland protocols for Zen Desktop";
