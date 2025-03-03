@@ -32,10 +32,27 @@
         "type": "github"
       }
     },
+    "nixpkgs-old-wlroots": {
+      "locked": {
+        "lastModified": 1674396919,
+        "narHash": "sha256-pnvdNBT+DBfy7sSlWSQoZkZ6q2M3ygao6Z3RKn1GlfI=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a7034be1bbde519d1bf12bc11a5900f3166b11c1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a7034be1bbde519d1bf12bc11a5900f3166b11c1",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixpkgs": "nixpkgs",
-        "nixpkgs-old-grpc": "nixpkgs-old-grpc"
+        "nixpkgs-old-grpc": "nixpkgs-old-grpc",
+        "nixpkgs-old-wlroots": "nixpkgs-old-wlroots"
       }
     }
   },
