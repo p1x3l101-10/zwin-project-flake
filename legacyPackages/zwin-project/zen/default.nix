@@ -19,6 +19,7 @@
 , zwin
 , formats
 , libdrm
+, mesa
 }:
 
 clangStdenv.mkDerivation rec {
@@ -37,6 +38,7 @@ clangStdenv.mkDerivation rec {
     ninja
     pkg-config
     cmakeMinimal
+    mesa.dev
   ];
   buildInputs = [
     wayland
@@ -49,6 +51,7 @@ clangStdenv.mkDerivation rec {
     librsvg
     cglm
     libdrm
+    mesa
   ];
   patches = [
     ./remove-meson-wrap.patch
