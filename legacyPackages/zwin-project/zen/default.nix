@@ -21,6 +21,10 @@
 , libdrm
 , mesa
 , wlr-protocols
+, wayland-scanner
+, zen-remote
+, zwin-protocols
+, kdePackages
 }:
 
 clangStdenv.mkDerivation rec {
@@ -40,6 +44,7 @@ clangStdenv.mkDerivation rec {
     pkg-config
     cmakeMinimal
     mesa.dev
+    wayland-scanner
   ];
   buildInputs = [
     wayland
@@ -54,6 +59,9 @@ clangStdenv.mkDerivation rec {
     libdrm
     mesa
     wlr-protocols
+    zen-remote
+    zwin-protocols
+    kdePackages.wayland-protocols
   ];
   patches = [
     ./remove-meson-wrap.patch
