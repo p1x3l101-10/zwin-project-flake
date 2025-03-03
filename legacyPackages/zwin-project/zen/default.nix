@@ -22,7 +22,7 @@
 , wlr-protocols
 , wayland-scanner
 , zen-remote
-, zwin-protocols
+, zen-protocols
 , kdePackages
 }:
 
