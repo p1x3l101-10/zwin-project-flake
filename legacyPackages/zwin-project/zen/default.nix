@@ -26,6 +26,7 @@
 , kdePackages
 , openvr
 , libxml2
+, shellcheck
 }:
 
 clangStdenv.mkDerivation rec {
@@ -46,6 +47,7 @@ clangStdenv.mkDerivation rec {
     cmakeMinimal
     mesa.dev
     wayland-scanner
+    shellcheck
   ];
   buildInputs = [
     wayland
