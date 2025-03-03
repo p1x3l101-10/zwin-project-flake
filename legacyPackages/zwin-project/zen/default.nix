@@ -34,6 +34,8 @@ clangStdenv.mkDerivation rec {
   nativeBuildInputs = [
     meson
     ninja
+    pkg-config
+    cmakeMinimal
   ];
   buildInputs = [
     wayland
