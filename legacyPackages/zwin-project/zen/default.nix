@@ -13,7 +13,7 @@
 , glew
 , freetype
 , librsvg
-, glm
+, cglm
 , grpc_49
 , zen-remote
 , zwin
@@ -46,6 +46,7 @@ clangStdenv.mkDerivation rec {
     glew
     freetype
     librsvg
+    cglm
   ];
   patches = [
     ./remove-meson-wrap.patch
