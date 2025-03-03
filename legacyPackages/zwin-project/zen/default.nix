@@ -21,7 +21,7 @@
 }:
 
 clangStdenv.mkDerivation rec {
-  name = "zukou";
+  name = "zen";
   version = "0.1.3";
 
   src = fetchFromGitHub {
