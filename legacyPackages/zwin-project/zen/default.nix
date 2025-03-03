@@ -48,13 +48,14 @@ clangStdenv.mkDerivation rec {
 
   postInstallPhase = let
     exampleConfig = ((formats.toml { }).generate "config.toml" {
-      wallpaper.filePath = "${out}/share/backgrounds/zen/Zen_Wallpaper_Main_3840x2160.png";
       board.initial_count = 3;
       space.default_app = "zennist";
     });
   in ''
     mkdir -p $out/etc/xdg/zen-desktop
     cp ${exampleConfig} $out/etc/xdg/zen-desktop/config.toml
+    echo "[wallpaper]" >> $out/etc/xdg/zen-desktop/config.toml
+    echo "filePath = $out/share/backgrounds/zen/Zen_Wallpaper_Main_3840x2160.png" >> $out/etc/xdg/zen-desktop/config.toml
   '';
 
   env = {
