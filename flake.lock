@@ -34,17 +34,17 @@
     },
     "nixpkgs-old-wlroots": {
       "locked": {
-        "lastModified": 1674396919,
-        "narHash": "sha256-pnvdNBT+DBfy7sSlWSQoZkZ6q2M3ygao6Z3RKn1GlfI=",
+        "lastModified": 1669079472,
+        "narHash": "sha256-8PnK02gNls1YoOq6clXb9t2f8Jcy8ofRIstV6G6gPQc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a7034be1bbde519d1bf12bc11a5900f3166b11c1",
+        "rev": "d2596de25e49d613b5eaf3d43d64f5ba216573c4",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a7034be1bbde519d1bf12bc11a5900f3166b11c1",
+        "rev": "d2596de25e49d613b5eaf3d43d64f5ba216573c4",
         "type": "github"
       }
     },
