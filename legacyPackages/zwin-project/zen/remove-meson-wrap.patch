@@ -21,7 +21,7 @@ index ef8ebc1..dbe8790 100644
  egl_dep = dependency('egl')
  fontconfig_dep = dependency('fontconfig')
 -glew_dep = glew_proj.get_variable('glew_dep')
-+glew_dep = dependency('glew_dep', version: gleq_req)
++glew_dep = dependency('glew_dep', version: glew_req)
  gl_dep = dependency('gl')
  m_dep = cc.find_library('m')
  pixman_dep = dependency('pixman-1')
