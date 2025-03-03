@@ -15,7 +15,6 @@
 , librsvg
 , cglm
 , grpc_49
-, zen-remote
 , zwin
 , formats
 , libdrm
