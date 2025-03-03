@@ -3,6 +3,9 @@
 , fetchFromGitHub
 , meson
 , ninja
+, pkg-config
+, cmakeMinimal
+, wayland-scanner
 }:
 
 stdenv.mkDerivation rec {
@@ -19,6 +22,11 @@ stdenv.mkDerivation rec {
   nativeBuildInputs = [
     meson
     ninja
+    pkg-config
+    cmakeMinimal
+  ];
+  buildInputs = [
+    wayland-scanner
   ];
 
   meta = with lib; {
