@@ -24,10 +24,9 @@ stdenv.mkDerivation rec {
     ninja
     pkg-config
     cmakeMinimal
-  ];
-  buildInputs = [
     wayland-scanner
   ];
+  buildInputs = [];
 
   meta = with lib; {
     description = "Wayland protocols for Zen Desktop";
