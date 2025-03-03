@@ -1,0 +1,27 @@
+diff --git a/meson.build b/meson.build
+index ef8ebc1..dbe8790 100644
+--- a/meson.build
++++ b/meson.build
+@@ -96,12 +96,7 @@ wayland_req = '>= 1.18.0'
+ wlroots_req = ['>= 0.15', '< 0.16']
+ zen_remote_server_req = '>= 0.1.1'
+ zwin_protocols_req = '0.1.0'
+-
+-glew_proj = subproject(
+-  'glew',
+-  required: true,
+-  version: '2.2.0',
+-)
++glew_req = '2.2.0'
+ 
+ # dependencies
+ 
+@@ -111,7 +106,7 @@ drm_dep = dependency('libdrm')
+ gbm_dep = dependency('gbm')
+ egl_dep = dependency('egl')
+ fontconfig_dep = dependency('fontconfig')
+-glew_dep = glew_proj.get_variable('glew_dep')
++glew_dep = dependency('glew_dep', version: gleq_req)
+ gl_dep = dependency('gl')
+ m_dep = cc.find_library('m')
+ pixman_dep = dependency('pixman-1')
