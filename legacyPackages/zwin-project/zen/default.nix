@@ -20,6 +20,7 @@
 , formats
 , libdrm
 , mesa
+, wlr-protocols
 }:
 
 clangStdenv.mkDerivation rec {
@@ -52,6 +53,7 @@ clangStdenv.mkDerivation rec {
     cglm
     libdrm
     mesa
+    wlr-protocols
   ];
   patches = [
     ./remove-meson-wrap.patch
