@@ -43,6 +43,7 @@ clangStdenv.mkDerivation rec {
     pkg-config
     cmakeMinimal
     mesa.dev
+    wlroots.dev
     wayland-scanner
   ];
   buildInputs = [
